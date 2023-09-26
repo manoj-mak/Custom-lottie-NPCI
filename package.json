@@ -10,7 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@lottiefiles/lottie-interactivity": "^1.6.2",
     "lottie-react": "^2.4.0",
+    "lottie-web": "^5.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

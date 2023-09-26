@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Raleway:wght@700&display=swap');
+
 /* App.css */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: #f0f0f0; /* Change to your desired background color */
 }
 
@@ -12,14 +14,24 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  border-width: 1px;
   
 }
 
 /* Increase padding for better spacing on mobile */
 @media (max-width: 480px) {
   .app-container {
-    padding: 12px;
+    
+    padding: 10px;
+    border-width: 2px;
+    border-color: black;
   }
+
+  .animation-container {
+    width: 100%;
+
+  }
+ 
 }
 
 
@@ -43,6 +55,27 @@ body {
     padding-top: 30px;
 
   }
+
+  .tooltip-card {
+    display: none;
+  }
 }
+
+
+.tooltip-card {
+  background-color: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
 
 
