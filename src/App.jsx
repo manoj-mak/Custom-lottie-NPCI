@@ -4,7 +4,7 @@ import LottieAnimation from './LottieAnimation';
 
 function App() {
   return (
-    <div className="animation-container">
+    <div className="app-container">
       <LottieAnimation />
     </div>
   );
