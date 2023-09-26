@@ -18,7 +18,7 @@ body {
 /* Increase padding for better spacing on mobile */
 @media (max-width: 480px) {
   .app-container {
-    padding: 20px;
+    padding: 12px;
   }
 }
 
