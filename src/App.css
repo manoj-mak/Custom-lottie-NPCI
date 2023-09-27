@@ -31,6 +31,10 @@ body {
     width: 100%;
 
   }
+
+  .tooltip {
+    display: none;
+  }
  
 }
 
@@ -56,7 +60,7 @@ body {
 
   }
 
-  .tooltip-card {
+  .tooltip {
     display: none;
   }
 }
