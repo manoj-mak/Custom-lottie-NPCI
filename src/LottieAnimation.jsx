@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
-import animationData from "/src/assets/npci.json";
+import animationData from "/src/assets/npci-lottie-revision1.json";
 
 const IDS = {
   rupayTop: "rupay-top",
@@ -30,12 +30,10 @@ function Tooltip({ text, position }) {
       }}
     >
       <div className="tooltip-card">
-        <span style={{ fontWeight: 800, fontSize: 18, marginBottom: 5 }}>
+        <span style={{ fontWeight: 800, fontSize: 18, marginBottom: 5, color:'#1b52ab'}}>
           {text}
         </span>
-        <span>bla</span>
-        <span>bla</span>
-        <span>bla</span>
+        <span>bla bla bla</span>
       </div>
     </div>
   );
@@ -68,6 +66,7 @@ function LottieAnimation() {
           setActiveLayer(IDS[id]);
           setTooltipText(IDS[id]);
           setTooltipPosition({ x: e.clientX, y: e.clientY });
+
         });
         element.addEventListener("mouseout", function (e) {
           setActiveLayer("");
