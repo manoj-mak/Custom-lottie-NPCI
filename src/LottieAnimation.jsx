@@ -3,19 +3,19 @@ import Lottie from "lottie-react";
 import animationData from "/src/assets/npci-lottie-revision1.json";
 
 const IDS = {
-  rupayTop: "rupay-top",
-  rupayBottom: "rupay-bottom",
-  upiLite: "upi-lite",
-  rupayOTG: "rupay-otg",
-  upi: "upi",
-  nfs: "nfs",
-  fastag1: "fastag-1",
-  fastag2: "fastag-2",
-  cts: "cts",
-  nach: "nach",
-  imps: "imps",
-  ipo: "ipo",
-  aeps: "aeps",
+  rupayTop: "RuPay-top",
+  rupayBottom: "RuPay-bottom",
+  upiLite: "UPI-Lite",
+  rupayOTG: "RuPay-otg",
+  upi: "UPI",
+  nfs: "NFS",
+  fastag1: "Fastag-1",
+  fastag2: "Fastag-2",
+  cts: "CTS",
+  nach: "NACH",
+  imps: "IMPS",
+  ipo: "IPO",
+  aeps: "AePS",
 };
 
 function Tooltip({ text, position }) {
@@ -30,7 +30,14 @@ function Tooltip({ text, position }) {
       }}
     >
       <div className="tooltip-card">
-        <span style={{ fontWeight: 800, fontSize: 18, marginBottom: 5, color:'#1b52ab'}}>
+        <span
+          style={{
+            fontWeight: 800,
+            fontSize: 18,
+            marginBottom: 5,
+            color: "#1b52ab",
+          }}
+        >
           {text}
         </span>
         <span>bla bla bla</span>
@@ -66,8 +73,8 @@ function LottieAnimation() {
           setActiveLayer(IDS[id]);
           setTooltipText(IDS[id]);
           setTooltipPosition({ x: e.clientX, y: e.clientY });
-
         });
+
         element.addEventListener("mouseout", function (e) {
           setActiveLayer("");
           setTooltipText("");
@@ -88,25 +95,25 @@ function LottieAnimation() {
 
   const Redirect = (id) => {
     let url = "";
-    if (id === "rupay-top" || id === "rupay-bottom" || id === "rupay-otg") {
+    if (id === "RuPay-top" || id === "RuPay-bottom" || id === "RuPay-otg") {
       url = "https://npci-new.allsocialassets.com/what-we-do/rupay";
-    } else if (id === "upi-lite") {
+    } else if (id === "UPI-Lite") {
       url = "https://npci-new.allsocialassets.com/what-we-do/upi";
-    } else if (id === "upi") {
+    } else if (id === "UPI") {
       url = "https://npci-new.allsocialassets.com/what-we-do/upi";
-    } else if (id === "nfs") {
+    } else if (id === "NFS") {
       url = "https://npci-new.allsocialassets.com/what-we-do/nfs";
-    } else if (id === "fastag-1" || id === "fastag-2") {
+    } else if (id === "Fastag-1" || id === "Fastag-2") {
       url = "https://npci-new.allsocialassets.com/what-we-do/netc-fastag";
-    } else if (id === "cts") {
+    } else if (id === "CTS") {
       url = "https://npci-new.allsocialassets.com/what-we-do/cts";
-    } else if (id === "nach") {
+    } else if (id === "NACH") {
       url = "https://npci-new.allsocialassets.com/what-we-do/nach";
-    } else if (id === "imps") {
+    } else if (id === "IMPS") {
       url = "https://npci-new.allsocialassets.com/what-we-do/imps";
-    } else if (id === "ipo") {
+    } else if (id === "IPO") {
       url = "https://npci-new.allsocialassets.com/what-we-do/ipo";
-    } else if (id === "aeps") {
+    } else if (id === "Aeps") {
       url = "https://npci-new.allsocialassets.com/what-we-do/aeps";
     }
 
@@ -117,7 +124,7 @@ function LottieAnimation() {
 
   return (
     <div className="animation-container">
-      <Lottie animationData={animationData} loop autoplay />
+      <Lottie animationData={animationData} loop autoplay renderer="svg" />
       {ActiveLayer && <Tooltip text={TooltipText} position={TooltipPosition} />}
     </div>
   );

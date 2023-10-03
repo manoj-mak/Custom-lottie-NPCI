@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Raleway:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Poppins:wght@500&family=Raleway:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&family=Poppins:wght@500&family=Raleway:wght@700&display=swap");
 
 /* App.css */
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f0f0f0; /* Change to your desired background color */
 }
 
@@ -16,13 +16,11 @@ body {
   justify-content: center;
   min-height: 100vh;
   border-width: 1px;
-  
 }
 
 /* Increase padding for better spacing on mobile */
 @media (max-width: 480px) {
   .app-container {
-    
     padding: 10px;
     border-width: 2px;
     border-color: black;
@@ -30,15 +28,12 @@ body {
 
   .animation-container {
     width: 100%;
-
   }
 
   .tooltip {
     display: none;
   }
- 
 }
-
 
 /* LottieAnimation.css */
 .animation-container {
@@ -49,7 +44,6 @@ body {
   width: 60vw;
 }
 
-
 /* Increase the animation size on mobile screens */
 @media (max-width: 768px) {
   .animation-container {
@@ -58,14 +52,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding-top: 30px;
-
   }
 
   .tooltip {
     display: none;
   }
 }
-
 
 .tooltip-card {
   background-color: #fff;
@@ -74,13 +66,54 @@ body {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   font-size: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
 }
 
+/* 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+#rupay-top,
+#rupay-bottom,
+#upi-lite,
+#rupay-otg,
+#upi,
+#nfs,
+#fastag-1,
+#fastag-2,
+#cts,
+#nach,
+#imps,
+#ipo,
+#aeps {
+  animation: pulsate 1s ease-in-out infinite;
+} 
+*/
 
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
-
+.pulsate {
+  animation: pulsate 1s ease-in-out infinite;
+}

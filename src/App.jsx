@@ -1,6 +1,6 @@
-import React from 'react';
-import './App.css';
-import LottieAnimation from './LottieAnimation';
+import React from "react";
+import "./App.css";
+import LottieAnimation from "./LottieAnimation";
 
 function App() {
   return (
@@ -11,4 +11,3 @@ function App() {
 }
 
 export default App;
-
