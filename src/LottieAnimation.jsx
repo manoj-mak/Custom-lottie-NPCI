@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Lottie from "lottie-react";
-import animationData from "/src/assets/npci-lottie-revision1.json";
+import animationData from "/src/assets/revised-npci.json";
 
 const IDS = {
   rupayTop: "RuPay-top",
